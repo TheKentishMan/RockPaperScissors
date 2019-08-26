@@ -1,13 +1,11 @@
-const playerSelection = computerPlay()
-const computerSelection = computerPlay()
-
 // Global Variables
 var playerScore;
 var computerScore;
-var rounds;
 
+const playerSelection = computerPlay()
 
-playRound(computerSelection, playerSelection)
+const computerSelection = computerPlay()
+game()
 
 function computerPlay() {
     // Randomly return rock, paper or scissors
@@ -37,6 +35,7 @@ function playRound(computerSelection, playerSelection) {
 
                 case 'paper':
                     console.log('Paper beats rock: %cPlayer loses', 'color:blue')
+                    score('computer')
                     break;
             }
 
@@ -47,6 +46,7 @@ function playRound(computerSelection, playerSelection) {
             switch (computerSelection) {
                 case 'rock':
                     console.log('Scissor beat rock:%c Player loses' , 'color:blue')
+                    score('computer')
                     break;
 
                 case 'scissors':
@@ -71,6 +71,7 @@ function playRound(computerSelection, playerSelection) {
 
                 case 'scissors':
                     console.log('Scissors beat paper:%c Player loses' , 'color:blue')
+                    score('computer')
                     break;
 
                 case 'paper':
@@ -107,13 +108,24 @@ function setup() {
     playerScore = 0;
     computerScore = 0;
 
-    // reset rounds 
-    rounds = 0;
+
+
 }
 
 function game () {
 
+    setup()
+
+    
     // add a input from the user here
-    var round 
+    var rounds = 10;
+
+    for (i = 0; i < rounds; i++) {
+        console.log('%cRound', 'color:red' , i )
+        const playerSelection = computerPlay()
+        const computerSelection = computerPlay()
+        playRound(computerSelection, playerSelection)
+
+    }
 
 }
