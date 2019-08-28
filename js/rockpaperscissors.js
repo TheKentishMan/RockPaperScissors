@@ -19,7 +19,7 @@ function computerPlay() {
 function playRound(computerSelection, playerSelection) {
     // Play a round of rock, paper or scissors
     console.log('Round Start');
-
+    
     switch (playerSelection) {
         case 'rock':
 
