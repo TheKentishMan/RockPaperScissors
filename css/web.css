@@ -4,33 +4,34 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 100px 100px;
-    grid-gap: 10px;
+    grid-gap: 5px;
 
 }
 
-.side {
+.instructions {
     grid-column: 1;
     grid-row: 1 / 5;
-    background-color: #40739e;
-    color: #f5f6fa;
-
+    background-color: lightgray;
+    padding: 5px;   
 }
 
-.options {
+.heading{
     grid-column: 2 / 4;
     grid-row: 1;
-    background-color: #40739e;
-    color: #f5f6fa;
+    background-color: lightgray;
+    padding: 5x;       
 }
 
-.score {
-    grid-column: 2 / 4;
-    grid-row: 2;
-    background-color: #dcdde1;
+.playerOne {
+    grid-column: 2;
+    grid-row: 2 / 5 ; 
+    background-color: lightgrey;
+    padding: 5px;  
 }
 
-.play {
-    grid-column: 2 / 4;
-    grid-row: 3 / 5;
-    background-color: #dcdde1;
+.playerTwo {
+    grid-column: 3 ;
+    grid-row: 2 / 5;
+    background-color: lightgrey;
+    padding: 5px;  
 }
