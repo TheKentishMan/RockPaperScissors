@@ -10,9 +10,9 @@
 
     grid-template-areas:
         'header header header'
+        'instructions playerOnePlay playerTwoPlay'
         'instructions results results'
-        'instructions playerOnePlay playerTwoPlay';
-
+        'instructions scoreOne scoreTwo';
     justify-content: space-evenly;
 
     align-content: center;
@@ -28,7 +28,6 @@
 .instructions {
     grid-area: instructions;
     background-color: gray;
-
     text-align: left;
     padding: 10px;
 }
@@ -42,8 +41,24 @@
     grid-area: results;
     background-color: darkgray;
     text-align: center;
+    align-items: center;    
+}
+
+.scoreOne {
+    grid-area: scoreOne;
+    background-color: darkgray;
+    text-align: center;
     padding: 10px;
 }
+
+
+.scoreTwo {
+    grid-area: scoreTwo;
+    background-color: darkgray;
+    text-align: center;
+    padding: 10px;
+}
+
 
 .playerOnePlay {
     grid-area: playerOnePlay;
