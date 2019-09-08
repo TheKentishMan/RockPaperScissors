@@ -1,21 +1,17 @@
-.wrapper {
-    grid-template-columns: 1fr 1fr 1fr;
 
-    grid-template-areas: 'instructions p myArea myArea myArea';
-}
 
 
 .wrapper {
     display: grid;
 
+    grid-template-columns: 1fr 1fr 1fr;
+
     grid-gap: 5px;
 
     grid-template-areas:
         'header header header'
-        'instructions playerOneSelect playerTwoSelect '
-        'instructions playerOneScore playerTwoScore'
-        'instructions playerOnePlay playerTwoPlay'
-        'Instructions footer footer';
+        'instructions results results'
+        'instructions playerOnePlay playerTwoPlay';
 
     justify-content: space-evenly;
 
@@ -24,57 +20,41 @@
 
 .header {
     grid-area: header;
-    background-color:lightslategray; 
+    background-color: lightslategray;
     text-align: center;
-    padding:10px;
+    padding: 10px;
 }
 
 .instructions {
     grid-area: instructions;
-    background-color:  darkgray;
-    
+    background-color: gray;
+
     text-align: left;
-    padding:10px;
+    padding: 10px;
 }
 
 .instructions button {
-    width:100%;
+    width: 100%;
 }
 
-.playerOneSelect {
-    grid-area: playerOneSelect;
-    background-color:  lightgray;
-    text-align: center;
-    padding:10px;
-}
 
-.playerTwoSelect {
-    grid-area: playerTwoSelect;
-    background-color:  lightgray;
+.results {
+    grid-area: results;
+    background-color: darkgray;
     text-align: center;
-    padding:10px;
-}
-
-.playerOneScore {
-    grid-area: playerOneScore;
-    background-color:  lightgray;
-    text-align: center;
-}
-
-.playerTwoScore {
-    grid-area: playerTwoScore;
-    background-color:  lightgray;
-    text-align: center;
+    padding: 10px;
 }
 
 .playerOnePlay {
     grid-area: playerOnePlay;
-    background-color:  slategray;
+    background-color: lightgray;
     text-align: center;
+    padding: 20px;
 }
 
 .playerTwoPlay {
     grid-area: playerTwoPlay;
-    background-color:  slategray;
+    background-color: lightgray;
     text-align: center;
+    padding: 20px;
 }
