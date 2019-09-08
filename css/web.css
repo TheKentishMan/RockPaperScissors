@@ -1,0 +1,36 @@
+/* https://flatuicolors.com/palette/gb */
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 100px 100px;
+    grid-gap: 10px;
+
+}
+
+.side {
+    grid-column: 1;
+    grid-row: 1 / 5;
+    background-color: #40739e;
+    color: #f5f6fa;
+
+}
+
+.options {
+    grid-column: 2 / 4;
+    grid-row: 1;
+    background-color: #40739e;
+    color: #f5f6fa;
+}
+
+.score {
+    grid-column: 2 / 4;
+    grid-row: 2;
+    background-color: #dcdde1;
+}
+
+.play {
+    grid-column: 2 / 4;
+    grid-row: 3 / 5;
+    background-color: #dcdde1;
+}
