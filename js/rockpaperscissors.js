@@ -1,14 +1,17 @@
-// Commenting to help me understand
-
-
-// Global Variables
-var playerScore;
-var computerScore;
-
 /*
     The functions for playerOne and Two will ultimate contain the ability to select either 
     human or computer but for the moment they are set to computer
 */
+
+var playerOneScore = 0;
+var playerTwoScore = 0;
+
+
+function clearScores (){
+
+    var playerOneScore = 0;
+    var playerTwoScore = 0;
+}
 
 function  playerOne (){
 
@@ -23,7 +26,7 @@ function  playerOne (){
     return (playerOnePlayed)
 }
 
-function  playerTwo (){
+function playerTwo (){
     /*
         Call the function and assigned it as wanted to ensure that what's written to the screen and
         what's scored are the same
@@ -38,7 +41,6 @@ function  playerTwo (){
 
 function play(){
     
-
     whoWon (playerOne(), playerTwo() )
     
 }
@@ -57,6 +59,7 @@ function whoWon(playerOne , playerTwo){
         playerOne == 'scissors' && playerTwo == 'paper') {
 
             document.getElementById("result").innerHTML = "player one wins";
+            score("playerOne")
 
         } else if (playerOne == playerTwo ) {
 
@@ -65,6 +68,7 @@ function whoWon(playerOne , playerTwo){
         } else {
 
             document.getElementById("result").innerHTML = "player two wins";
+            score("playerTwo")
         }
         
 
@@ -80,16 +84,17 @@ function computerPlay() {
 }
 
 function score(whoScored) {
-    if(whoScored == 'computer'){
-        computerScore += 1
-        console.log('Computer: ' , computerScore)
-    }
 
-    if(whoScored == 'player'){
-        playerScore += 1
-        console.log('Player:' , playerScore)
-    }
+    if(whoScored == 'playerOne'){
+        
+        playerOneScore += 1
+        
+        document.getElementById("playerOneScore").innerHTML = playerOneScore;
 
-    return (playerScore , computerScore)
+    } else {
+        
+        playerTwoScore += 1
+        
+        document.getElementById("playerTwoScore").innerHTML = playerTwoScore;
+    }
 }
-
