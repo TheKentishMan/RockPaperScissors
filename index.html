@@ -20,36 +20,35 @@
 
         <div class="instructions">
             <h3>Instructions</h3>
-            <button type="button" class="btn-lg btn-success" onclick="startGame()">Play</button>
+            <p>Play a game of rock paper scissor - well watch the computer play a game</p>
+            <p>Task from the Odin Project, which only asks for console log output in the first instance
+                however I'd thought I'd give it a go to output to a webpage
+            </p>
+            <button type="button" class="btn-lg btn-success" onclick="play()">Play</button>
         </div>
 
-        <div class="playerOneSelect">
-            <h3>Player One</h3>
-            <button type="button" class="btn-sm btn-outline-secondary">Human</button>
-            <button type="button" class="btn-sm btn-outline-secondary">Computer</button>
+
+        <div class="results">
+            <h5>Result</h5>
+            <p id="result">
+
+            </p>
         </div>
 
-        <div class="playerTwoSelect">
-            <h3>Player Two</h3>
-            <button type="button" class="btn-sm btn-outline-secondary">Human</button>
-            <button type="button" class="btn-sm btn-outline-secondary">Computer</button>
-
-        </div>
-
-        <div class="playerOneScore">
-            Player One Score
-        </div>
-
-        <div class="playerTwoScore">
-            Player Two Score
-        </div>
 
         <div class="playerOnePlay">
-            Player One Play
+
+            <h5>Player One</h5>
+            
+            <p id="playerOne"></p>
         </div>
 
         <div class="playerTwoPlay">
-            Player Two Play
+
+            <h5>Player Two</h5>
+
+            <p id="playerTwo"></p>
+
         </div>
 
     </div>
