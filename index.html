@@ -5,58 +5,55 @@
     <title>The Odin Project - Rock Paper Scissors</title>
 
     <link rel="stylesheet" type="text/css" href="css/web.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
 </head>
 
 <body>
-
     <div class="wrapper">
+        <div class="header">
+            <h1>Rock Paper Scissors</h1>
+        </div>
+
         <div class="instructions">
-            <h1>Odin Project</h1>
-
-            <p>Create a blank HTML document with a script tag. This game is going to be played completely from the
-                console, so don’t worry about putting anything else in there.</p>
-
-            <a
-                href="https://www.theodinproject.com/courses/web-development-101/lessons/rock-paper-scissors?ref=lnav#assignment">More
-                details at Odin Project page</a>
-
-            <h3>Comments</h3>
-            <p>Game works and does some scoring but only outputs to the console</p>
+            <h3>Instructions</h3>
+            <button type="button" class="btn-lg btn-success" onclick="startGame()">Play</button>
         </div>
 
-        
-        <div class="heading">
-            <div>
-                    <h1>Rock Paper Scissors</h1>
-            </div>
-            
-            <div>
-                <p>Player One</p>
-            </div>
-            <div>
-                    <p>Player Two</p>
-                </div>
-        </div>
-        
-        <div class="playerOne">
-            <h2>Player One</h2>
-            <button type="button" class="btn btn-secondary">Computer</button>
-            <button type="button" class="btn btn-secondary">Human</button>
-            
+        <div class="playerOneSelect">
+            <h3>Player One</h3>
+            <button type="button" class="btn-sm btn-outline-secondary">Human</button>
+            <button type="button" class="btn-sm btn-outline-secondary">Computer</button>
         </div>
 
+        <div class="playerTwoSelect">
+            <h3>Player Two</h3>
+            <button type="button" class="btn-sm btn-outline-secondary">Human</button>
+            <button type="button" class="btn-sm btn-outline-secondary">Computer</button>
 
-        <div class="playerTwo">
-                <h2>Player Two</h2>
-                <button type="button" class="btn btn-secondary">Computer</button>
-                <button type="button" class="btn btn-secondary">Human</button>
-    
-            </div>
+        </div>
+
+        <div class="playerOneScore">
+            Player One Score
+        </div>
+
+        <div class="playerTwoScore">
+            Player Two Score
+        </div>
+
+        <div class="playerOnePlay">
+            Player One Play
+        </div>
+
+        <div class="playerTwoPlay">
+            Player Two Play
+        </div>
+
     </div>
-
-        <script src="js/rockpaperscissors.js"></script>
+    <script src="js/rockpaperscissors.js"></script>
 
 </body>
 

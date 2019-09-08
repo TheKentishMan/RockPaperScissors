@@ -2,10 +2,22 @@
 var playerScore;
 var computerScore;
 
-const playerSelection = computerPlay()
-
 const computerSelection = computerPlay()
-game()
+const computerSelection = computerPlay()
+
+
+
+
+function computerPlay() {
+    // Randomly return rock, paper or scissors
+    const options = ["rock", "paper", "scissors"]
+
+    selection = Math.floor(Math.random() * 3);
+
+    return (options[selection])
+}
+
+
 
 function computerPlay() {
     // Randomly return rock, paper or scissors
@@ -18,8 +30,7 @@ function computerPlay() {
 
 function playRound(computerSelection, playerSelection) {
     // Play a round of rock, paper or scissors
-    console.log('Round Start');
-    
+ 
     switch (playerSelection) {
         case 'rock':
 
@@ -107,16 +118,12 @@ function setup() {
     // reset scores 
     playerScore = 0;
     computerScore = 0;
-
-
-
 }
 
-function game () {
+function startGame () {
 
     setup()
 
-    
     // add a input from the user here
     var rounds = 10;
 
