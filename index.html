@@ -5,6 +5,8 @@
     <title>The Odin Project - Rock Paper Scissors</title>
 
     <link rel="stylesheet" type="text/css" href="css/web.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -24,22 +26,34 @@
             <p>Game works and does some scoring but only outputs to the console</p>
         </div>
 
+        
         <div class="heading">
-            <h1>Players</h1>
+            <div>
+                    <h1>Rock Paper Scissors</h1>
+            </div>
+            
+            <div>
+                <p>Player One</p>
+            </div>
+            <div>
+                    <p>Player Two</p>
+                </div>
         </div>
         
         <div class="playerOne">
             <h2>Player One</h2>
-            <button>Computer</button>
-            <button>Human</button>
+            <button type="button" class="btn btn-secondary">Computer</button>
+            <button type="button" class="btn btn-secondary">Human</button>
+            
         </div>
 
 
         <div class="playerTwo">
                 <h2>Player Two</h2>
-                <button>Computer</button>
-                <button>Human</button>
-        </div>
+                <button type="button" class="btn btn-secondary">Computer</button>
+                <button type="button" class="btn btn-secondary">Human</button>
+    
+            </div>
     </div>
 
         <script src="js/rockpaperscissors.js"></script>
